@@ -16,7 +16,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://ifi-assignment-f3zv.vercel.app/", // <-- replace with your actual frontend URL
+      "https://ifi-assignment-f3zv.vercel.app", // <-- replace with your actual frontend URL
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // if you’re using cookies or auth headers
