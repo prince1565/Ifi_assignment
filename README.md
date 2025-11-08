@@ -12,7 +12,6 @@ The project includes a **Node.js + Express backend** with a **MongoDB database**
 - Tailwind CSS
 - Axios for API requests
 - React Router DOM
-- ShadCN/UI Components (optional)
 
 ### ⚙️ Backend:
 - Node.js
@@ -61,12 +60,10 @@ Backend runs on http://localhost:5000
 🧾 API Endpoints and Example Responses
 1️⃣ Fetch Product by Slug
 
-Endpoint:
+Endpoint: GET /api/products/:slug
 
-Example Request:
-
-GET /api/products/iphone-15
-
+Example Request:  GET /api/products/iphone-15
+ 
 Example Response:
 
 {
