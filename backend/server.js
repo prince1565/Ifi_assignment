@@ -12,7 +12,16 @@ connectDB();
 const app = express();
 
 // Middlewares
-app.use(cors());
+// Allow only your frontend domain
+app.use(
+  cors({
+    origin: [
+      "https://ifi-assignment-f3zv.vercel.app/", // <-- replace with your actual frontend URL
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, // if you’re using cookies or auth headers
+  })
+);
 app.use(express.json());
 
 // Routes
